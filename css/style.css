@@ -111,7 +111,7 @@ Navigation Styles
 .off-canvas-nav ul li {
     text-transform: uppercase;
     margin: 10px auto;
-        font-family: 'Source Sans Pro', sans-serif;
+    font-family: 'Source Sans Pro', sans-serif;
     font-size: 1.625em; /* 26px / 16px */
     font-weight: 200;
 }
@@ -247,23 +247,21 @@ Page Border Styles
 @media only screen and (max-width: 768px){
 
     .off-canvas-menu {
-        position: absolute;
-        top: 0;
-        right: 0;
-        bottom: 0;
-        left: auto;
         width: 100%;
         height: 35%;
-        z-index: 1005;
-        background: rgba(53, 57, 57, 1.0);
         transform: translateY(-100%);
-        transition: transform 0.7s ease;
         padding-top: 11%;
     }
 
     .off-canvas-menu.open {
         transform: translateY(0);
-        z-index: 1005;
+    }
+    
+    .project-btn a {
+        border: 1px solid #fff;
+        margin-top: 30px;
+        padding: 0.3846153846153846em 2.604166666666667%; /* 10px / 26px padding-top */ /* 20px / 240px  padding left and right*/
+        text-transform: capitalize;
     }
     
     #branding img {
@@ -281,5 +279,9 @@ only screen and (min-device-width: 768px) and (max-device-width: 1024px)
 
 {
 	#top, #bottom, #left, #right { display: none; }
+    
+    .off-canvas-nav ul li {
+        font-size: 1.375em; /* 22px / 16px */
+    }
 }
 
