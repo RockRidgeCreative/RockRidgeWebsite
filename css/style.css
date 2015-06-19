@@ -168,7 +168,7 @@ a:hover {}
 
 #branding {
     width: 93.75%;
-    margin: 165px auto;
+    margin: 165px auto 0;
     text-align: center;   
 }
 
@@ -190,15 +190,19 @@ a:hover {}
 }
 
 .main-content h1 {
-    font-family: 'Spinnaker', Arial, sans-serif;
-    font-size: 34px;
+    font-family: 'Syncopate', Arial, sans-serif;
+    font-size: 32px;
     letter-spacing: 2px;
     color: #fff;
     text-transform: uppercase;
-    text-align: center;
+    text-align: right;
     font-weight: 900;
     margin: 0;
     padding: 0;
+    float: left;
+    width: 50%;
+    height: 100%;
+    margin-bottom: 500px;
 }
  
 .main-content h2 {
@@ -207,10 +211,12 @@ a:hover {}
     letter-spacing: -1px;
     color: #fff;
     text-transform: uppercase;
-    text-align: center;
+    text-align: left;
     font-weight: 100;
     margin: 0;
     padding: 0;
+    float: right;
+    width: 50%;
 }
 
 .scroll-line {
