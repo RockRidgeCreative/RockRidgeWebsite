@@ -22,6 +22,11 @@ body {
     width: 90%; /* 960px */
 }
 
+@font-face {
+    font-family: 'Alternate Gothic No2 BT';
+    src: url('fonts/Alternate Gothic No2 BT.ttf'), 
+}
+
 /*==================================
 =       Navigation Styles          =
 ==================================*/
@@ -182,6 +187,30 @@ a:hover {}
     font: normal 400 24px/1 'Syncopate';
     color: #fff;
     text-transform: uppercase;
+}
+
+.main-content h1 {
+    font-family: 'Spinnaker', Arial, sans-serif;
+    font-size: 34px;
+    letter-spacing: 2px;
+    color: #fff;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: 900;
+    margin: 0;
+    padding: 0;
+}
+ 
+.main-content h2 {
+    font-family: 'Syncopate', Arial, sans-serif;
+    font-size: 18px;
+    letter-spacing: -1px;
+    color: #fff;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: 100;
+    margin: 0;
+    padding: 0;
 }
 
 .scroll-line {
