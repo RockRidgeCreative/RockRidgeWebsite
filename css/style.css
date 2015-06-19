@@ -170,7 +170,7 @@ a:hover {}
 #branding img {
     margin: auto;
     position: absolute;
-    top: -550px; left: 0; bottom: 0; right: 0;
+    top: -67.5%; left: 0; bottom: 0; right: 0;
     width: 5%;
     height: auto;
 }
@@ -218,7 +218,7 @@ a:hover {}
     top: 100%;
     left: 0;
     width: 100%;
-    font: normal 700 12px/1 'Lato';
+    font: normal 400 10px/1 'Spinnaker';
     text-transform: uppercase;
     text-align: center;
 }
