@@ -9,7 +9,7 @@ html {
 }
 
 body { 
-  background: url(../img/main_bg.jpg) no-repeat center center fixed; 
+  background: url(../img/mountain_river.jpg) no-repeat center center fixed; 
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -22,11 +22,9 @@ body {
     width: 90%; /* 960px */
 }
 
-/****************
-
-Navigation Styles
-
-*****************/
+/*==================================
+=       Navigation Styles          =
+==================================*/
 
 .off-canvas-menu {
     position: absolute;
@@ -34,12 +32,12 @@ Navigation Styles
     right: 0;
     bottom: 0;
     left: auto;
-    width: 25%; /* 240px */
+    width: 22%; /* 211.2px */
     z-index: 1005;
-    background: rgba(53, 57, 57, 1.0);
+    background: rgba(0, 0, 0, 0.9); /* 53, 57, 57, 1.0 */ 
     transform: translateX(100%);
     transition: transform 0.7s ease;
-    padding-top: 11%;
+    padding-top: 6%;
 }
 
 .off-canvas-menu.open {
@@ -53,32 +51,30 @@ Navigation Styles
     height: 40px;
     cursor: pointer;
     position: absolute;
-    top: 30px;
-    right: 30px;
+    top: 40px;
+    right: 50px;
     z-index: 2000;
 }
 
 .menu-button-bar {
-  position: absolute;
-  top: auto;
-  right: auto;
-  bottom: auto;
-  left: 50%;
-  width: 24px;
-  height: 2px;
-  margin-left: -12px;
-  margin-top: -1px;
-  background-color: white;
+    position: absolute;
+    top: auto;
+    right: auto;
+    bottom: auto;
+    left: 50%;
+    width: 24px;
+    height: 2px;
+    margin-left: -12px;
+    margin-top: -1px;
+    background-color: white;
 }
 
 .menu-bar1 {
     top: 13px;
 }
-
 .menu-bar2 {
     top: 20px;
 }
-
 .menu-bar3 {
     top: 27px;
 }
@@ -104,16 +100,16 @@ Navigation Styles
 
 .off-canvas-nav ul {
     list-style-type: none;
-    text-align: center;
-    padding-right: 12.5%;
+    text-align: left;
+    margin-left: 13.5%; 
 }
 
 .off-canvas-nav ul li {
     text-transform: uppercase;
     margin: 10px auto;
-    font-family: 'Source Sans Pro', sans-serif;
-    font-size: 1.625em; /* 26px / 16px */
-    font-weight: 200;
+    font-family: 'Spinnaker', sans-serif;
+    font-size: 1em; /* 20px / 16px */
+    font-weight: 400;
 }
 
 a {
@@ -126,23 +122,32 @@ a:active {}
 a:hover {}
 
 .project-btn {
-    padding-top: 15px;
+    padding-top: 0.5769230769230769em;
 }
 
 .project-btn a {
     border: 1px solid #fff;
     margin-top: 30px;
-    padding: 0.3846153846153846em 8.333333333333333%; /* 10px / 26px padding-top */ /* 20px / 240px  padding left and right*/
+    padding: 0.3846153846153846em 8.333333333333333%; /* 20px / 240px */
     text-transform: capitalize;
 }
 
-.social-media {
-    position: relative;
-    left: 27%;  
+.social-media { 
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.social-media p {
+    color: #999;
+    font-family: 'Spinnaker', sans-serif;
+    font-size: 0.75em; /* 12px / 16px */ 
 }
 
 .social-icon {
-    margin: 10px;
+    margin: 0.925em 4.166666666666667%; 
 }
 
 
@@ -153,36 +158,74 @@ a:hover {}
 	width: 100%;
 	height: 100%;
 	z-index: -1;
-	background: rgba(53, 57, 57, 0.5);
+	background: rgba(0, 0, 0, 0.5);
 }
 
 #branding {
     width: 93.75%;
-    margin: 20% auto;
+    margin: 14.5% auto;
+    text-align: center;   
 }
 
 #branding img {
     margin: auto;
     position: absolute;
-    top: 0; left: 0; bottom: 0; right: 0;
-    width: 35.5%;
+    top: -550px; left: 0; bottom: 0; right: 0;
+    width: 5%;
     height: auto;
 }
 
-#branding h1 {
-    position: absolute;
-    top: 0; left: 0; bottom: 0; right: 0;
-    font-size: 1.125em; /* 18px / 16px */
+#branding p {
+    font: normal 400 24px/1 'Syncopate';
     color: #fff;
-    font-family: 'Roboto', Arial, sans-serif;
-    font-weight: 200;
+    text-transform: uppercase;
 }
 
-/****************
+.scroll-line {
+    position: fixed;
+    bottom: 0%;
+    left: 50%;
+    width: 2px;
+    height: 6.5%;
+    margin: 0 0 0 -1px;
+    background: rgba(255, 255, 255, 1);
+  /*visibility: hidden;*/
+  /*opacity: 0;*/
+}
 
-Page Border Styles
+.scroll-text {
+    position: fixed;
+    bottom: 70px;
+    left: 50%;
+    width: 80px;
+    /*height: px; */
+    margin: 0 0 0 -40px;
+    cursor: pointer;
+    color: #fff;
+}
 
-*****************/
+.scroll-text p {
+    position: relative;
+    /*overflow: hidden;*/
+    height: 12px;
+    margin: 0;
+    padding: 0;
+}
+
+.scroll-text p span {
+    display: block;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    font: normal 700 12px/1 'Lato';
+    text-transform: uppercase;
+    text-align: center;
+}
+
+/*==================================
+=        Page Border Styles        =
+==================================*/
 
 #top, #bottom, #left, #right {
 	background: #fff;
@@ -217,71 +260,119 @@ Page Border Styles
     bottom: 0; 
 }
 
-@media only screen and (max-width: 480px){
 
-    .off-canvas-menu {
-        position: absolute;
-        top: 0;
-        right: 0;
-        bottom: 0;
-        left: auto;
-        width: 100%;
-        height: 100%;
-        z-index: 1005;
-        background: rgba(53, 57, 57, 1.0);
-        transform: translateY(-100%);
-        transition: transform 0.7s ease;
-        padding-top: 11%;
-    }
+/*==================================
+=         Animation Styles         =
+==================================*/
 
-    .off-canvas-menu.open {
-        transform: translateY(0);
-        z-index: 1005;
+.os-animation{
+  opacity: 0;
+}
+
+.os-animation.animated{
+    opacity: 1;
+}
+
+/*==================================
+=          Media Queries           =
+==================================*/
+
+@media only screen and (max-width : 1200px) {
+
+}
+
+@media only screen and (max-width : 1024px) {
+    .off-canvas-nav ul li {
+        font-size: 1.25em; /* 20px / 16px */
     }
     
-    #branding img {
-        width: 85%;
+    .project-btn {
+        padding: 0.5769230769230769em 8.333333333333333%;
+    }
+
+    
+    .project-btn a {
+        border: 1px solid #fff;
+        margin-top: 30px;
+        padding: 0.3846153846153846em 8.95%; /* 18px / 240px */
+        font-size: smaller;
+        text-transform: capitalize;
     }
 }
 
-@media only screen and (max-width: 768px){
-
-    .off-canvas-menu {
+@media only screen and (max-width : 768px) {
+   .off-canvas-menu {
         width: 100%;
-        height: 35%;
-        transform: translateY(-100%);
-        padding-top: 11%;
+        height: 37.5%;
+        background: rgba(0, 0, 0, 0.9);
+        transform: translateY(-135%);
+        padding-top: 9%;
     }
-
     .off-canvas-menu.open {
         transform: translateY(0);
+    }
+    
+    .off-canvas-nav ul li {
+        font-size: 2em; /* 32px / 16px */
     }
     
     .project-btn a {
         border: 1px solid #fff;
         margin-top: 30px;
-        padding: 0.3846153846153846em 2.604166666666667%; /* 10px / 26px padding-top */ /* 20px / 240px  padding left and right*/
+        padding: 0.3846153846153846em 2.604166666666667%; /* 20px / 240px */
         text-transform: capitalize;
     }
     
     #branding img {
-        width: 65%;
+        top: -750px;
+        width: 15%;
+    }
+    
+    #branding p {
+        margin-top: 235px;
+        font-size: 22px;
     }
 }
 
-@media 
+@media only screen and (max-width : 568px) {
+    .off-canvas-menu {
+        width: 100%;
+        height: 100%;
+        transform: translateY(-200%);
+        padding-top: 35%;
+    }
 
-/* Fairly small screens including iphones */
-only screen and (max-width: 500px),
-
-/* iPads */
-only screen and (min-device-width: 768px) and (max-device-width: 1024px) 
-
-{
-	#top, #bottom, #left, #right { display: none; }
+    .off-canvas-menu.open {
+        transform: translateY(0);
+    }
+    
+    #branding img {
+        top: -300px;
+        width: 25%;
+    }
+    
+    #branding p {
+        margin-top: 200px;
+        font-size: 22px;
+    }
     
     .off-canvas-nav ul li {
-        font-size: 1.375em; /* 22px / 16px */
+        font-size: 2.25em; /* 32px / 16px */
     }
 }
 
+@media only screen and (max-width : 320px) {
+    .off-canvas-nav ul li {
+        font-size: 1.125em; /* 18px / 16px */
+    }
+}
+
+/* @media only screen and (max-width : 320px), 
+    only screen and (max-width : 480px), 
+    only screen and (max-width : 767px),
+    only screen and (max-width : 979px),
+    only screen and (max-width : 1024px)
+{
+    #top, #bottom, #left, #right { display: none; }
+}
+*/
