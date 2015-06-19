@@ -137,14 +137,13 @@ a:hover {}
     bottom: 0;
     width: 100%;
     text-align: center;
-    margin-bottom: 10px;
 }
 
 .social-media p {
     color: #999;
     font-family: 'Spinnaker', sans-serif;
     font-size: 0.75em; /* 12px / 16px */ 
-    margin: 0 15px;
+    margin: 10px 15px 25px;
 }
 
 .social-icon {
@@ -164,7 +163,7 @@ a:hover {}
 
 #branding {
     width: 93.75%;
-    margin: 13.5% auto;
+    margin: 14% auto;
     text-align: center;   
 }
 
