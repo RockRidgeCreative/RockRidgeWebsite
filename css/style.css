@@ -191,18 +191,14 @@ a:hover {}
 
 .main-content h1 {
     font-family: 'Syncopate', Arial, sans-serif;
-    font-size: 32px;
+    font-size: 28px;
     letter-spacing: 2px;
     color: #fff;
     text-transform: uppercase;
-    text-align: right;
+    text-align:center;
     font-weight: 900;
-    margin: 0;
+    margin: 15% 0 0;
     padding: 0;
-    float: left;
-    width: 50%;
-    height: 100%;
-    margin-bottom: 500px;
 }
  
 .main-content h2 {
@@ -211,12 +207,10 @@ a:hover {}
     letter-spacing: -1px;
     color: #fff;
     text-transform: uppercase;
-    text-align: left;
+    text-align: center;
     font-weight: 100;
     margin: 0;
     padding: 0;
-    float: right;
-    width: 50%;
 }
 
 .scroll-line {
