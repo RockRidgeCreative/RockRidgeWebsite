@@ -103,18 +103,23 @@ body {
   transform: rotate(-45deg);
 }
 
+.off-canvas-nav {
+    position: absolute;
+    width: 100%;
+}
+
 .off-canvas-nav ul {
     list-style-type: none;
-    text-align: left;
-    margin-left: 13.5%; 
 }
 
 .off-canvas-nav ul li {
     text-transform: uppercase;
-    margin: 10px auto;
     font-family: 'Spinnaker', sans-serif;
     font-size: 1em; /* 20px / 16px */
     font-weight: 400;
+    width: 100%;
+    text-align: left;
+    margin-top: 0.625em;
 }
 
 a {
@@ -196,7 +201,7 @@ a:hover {}
     color: #fff;
     text-transform: uppercase;
     text-align: center;
-    font-weight: 900;
+    font-weight: 400;
     position: relative;
     top: 60px; bottom: 0; left: 0; right: 0;
     line-height: 24pt;
