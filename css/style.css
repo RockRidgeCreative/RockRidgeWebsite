@@ -190,6 +190,7 @@ a:hover {}
 }
 
 .main-content h1 {
+<<<<<<< HEAD
     font-family: 'Oswald Regular', Arial, sans-serif;
     font-size: 182px; /* 172px / ??? */ 
     letter-spacing: 2px;
@@ -199,6 +200,17 @@ a:hover {}
     font-weight: 900;
     position: relative;
     top: 0; bottom: 0; left: 0; right: 0; 
+=======
+    font-family: 'Syncopate', Arial, sans-serif;
+    font-size: 28px;
+    letter-spacing: 2px;
+    color: #fff;
+    text-transform: uppercase;
+    text-align:center;
+    font-weight: 900;
+    margin: 15% 0 0;
+    padding: 0;
+>>>>>>> origin/master
 }
  
 .main-content h2 {
@@ -209,8 +221,13 @@ a:hover {}
     text-transform: uppercase;
     text-align: center;
     font-weight: 100;
+<<<<<<< HEAD
     position: relative;
     top: -165px; bottom: 0; left: 0; right: 0;
+=======
+    margin: 0;
+    padding: 0;
+>>>>>>> origin/master
 }
 
 .scroll-line {
