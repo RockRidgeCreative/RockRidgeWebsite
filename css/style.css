@@ -32,6 +32,12 @@ body {
     src: url('fonts/Ham and Eggs by Intestino Grueso.ttf'), 
 }
 
+@font-face {
+    font-family: 'Bebas';
+    src: url('fonts/BEBAS_.ttf'), 
+}
+
+
 /*==================================
 =       Navigation Styles          =
 ==================================*/
@@ -116,7 +122,7 @@ body {
 
 .off-canvas-nav ul li {
     text-transform: uppercase;
-    margin: 10px auto;
+    margin: 10px 0;
     font-family: 'Spinnaker', sans-serif;
     font-size: 1em; /* 20px / 16px */
     font-weight: 400;
@@ -189,22 +195,27 @@ a:hover {}
 }
 
 #branding p {
-    font: normal 400 24px/1 'Ham-and-Eggs';
+    font: normal 400 24px/1 'Syncopate';
     color: #fff;
     text-transform: uppercase;
 }
 
+.main-content {
+    position: relative;
+    top: 70px; right 0; bottom: 0; left 0;
+}
+
 .main-content h1 {
-    font-family: 'Sunday', Arial, sans-serif;
-    font-size: 9.5em; /* 152px / 16px */ 
+    font-family: 'Oswald Regular', Arial, sans-serif;
+    font-size: 11em; /* 152px / 16px */ 
     letter-spacing: 2px;
     color: #fff;
     text-transform: uppercase;
     text-align: center;
     font-weight: 900;
-    position: relative;
-    top: 50px; bottom: 0; left: 0; right: 0;
-    line-height: 24pt;
+    line-height: 142pt;
+    margin: 10px auto;
+    padding: 0;
 }
  
 .main-content h2 {
@@ -215,11 +226,28 @@ a:hover {}
     text-transform: uppercase;
     text-align: center;
     font-weight: 100;
-    position: relative;
-    top: 0px; bottom: 0; left: 0; right: 0;
+    margin: 27px auto;
+    padding: 0;
 }
 
-.scroll-line {
+.main-content hr {
+    width: 56%;
+}
+
+.get-started {
+    border: 1px solid #fff;
+    padding: 15px 25px;
+    color: #fff;
+    margin: 50px auto 0;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 12px;
+    position: absolute;
+    left: 45%;
+    top: 135%;
+}
+
+/*.scroll-line {
     position: fixed;
     bottom: 0%;
     left: 50%;
@@ -228,23 +256,23 @@ a:hover {}
     margin: 0 0 0 -1px;
     background: rgba(255, 255, 255, 1);
   /*visibility: hidden;*/
-  /*opacity: 0;*/
-}
+  /*opacity: 0;
+}*/
 
-.scroll-text {
+/*.scroll-text {
     position: fixed;
     bottom: 70px;
     left: 50%;
     width: 80px;
-    /*height: px; */
+    /*height: px; 
     margin: 0 0 0 -40px;
     cursor: pointer;
     color: #fff;
-}
+}*/
 
-.scroll-text p {
+/*.scroll-text p {
     position: relative;
-    /*overflow: hidden;*/
+    /*overflow: hidden;
     height: 12px;
     margin: 0;
     padding: 0;
@@ -260,6 +288,7 @@ a:hover {}
     text-transform: uppercase;
     text-align: center;
 }
+*/
 
 /*==================================
 =        Page Border Styles        =
