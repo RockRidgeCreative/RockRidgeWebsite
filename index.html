@@ -2,6 +2,7 @@
 <html>
     <head>
         <title>Rock Ridge Creative Works</title>
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
         <link rel="stylesheet" media="screen" href="css/style.css" />
         <link rel="stylesheet" href="css/normalize.css" />
         <link href='http://fonts.googleapis.com/css?family=Spinnaker' rel='stylesheet' type='text/css'>
@@ -11,16 +12,26 @@
         <link rel="stylesheet" href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
         <script src="js/jquery-1.11.3.min.js"></script>
         <script src="js/animations.js"></script>
+        <script src="js/jquery.onepage-scroll.js"></script>
+		<script src="js/onepage-scroll.js"></script>
         <script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/waypoints/2.0.4/waypoints.min.js"></script>
         <link rel="stylesheet" type="text/css" href="http://cdn.bootcss.com/animate.css/3.1.0/animate.css">
-        <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<script>
+			$(document).ready(function(){
+			  $(".main").onepage_scroll({
+				sectionContainer: "section",
+				responsiveFallback: 600,
+				loop: true
+			  });
+			});
+        </script>
         <!--[if lte IE 6]>
 	       <style>#top, #bottom, #left, #right { display: none; }</style>
         <![endif]-->
     </head>
     <body>
-        <div id="overlay"></div><!-- /end #overlay -->
-        <div class="container">
+        <nav>
             <div class="menu-button">
                 <div class="menu-button-bar menu-bar1"></div>
                 <div class="menu-button-bar menu-bar2"></div>
@@ -29,11 +40,11 @@
             <div class="off-canvas-menu">
                 <nav class="off-canvas-nav">
                     <ul>
-                        <li><a class="ion-ios-information-outline" href="#">&nbsp;&nbsp;About</a></li>
-                        <li><a class="ion-ios-gear-outline" href="#">&nbsp;&nbsp;Services</a></li>
-                        <li><a class="ion-ios-crop" href="#">&nbsp;&nbsp;Portfolio</a></li>
-                        <li><a class="ion-ios-list-outline" href="#">&nbsp;&nbsp;Blog</a></li>
-                        <li><a class="ion-ios-chatbubble-outline" href="#">&nbsp;&nbsp;Get In Touch</a></li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Services</a></li>
+                        <li><a href="#">Portfolio</a></li>
+                        <li><a href="#">Get In Touch</a></li>
+                        <li><a href="#">Blog</a></li>
                         <li class="project-btn"><a href="#">Start A Project</a></li>
                     </ul>
                 </nav>
@@ -42,29 +53,51 @@
                     <a href="#" ><i class="ion-social-twitter-outline social-icon"></i></a>
                     <a href="#" ><i class="ion-social-googleplus-outline social-icon"></i></a>
                     <a href="#" ><i class="ion-social-linkedin-outline social-icon"></i></a>
+                    <hr />
                     <p>&copy; 2015 Rock Ridge Creative. All Rights Reserved.</p>
                 </div>
             </div><!-- /end .off-canvas-menu -->
-            <div id="branding">
-               <img src="img/logo_white_v3.svg" alt="Logo" />
-                <p>Rock Ridge Creative</p>
-            </div><!-- /end #branding -->
-            <div class="main-content">
-                <h1>THINK BIG</h1>
-                <h2>Web Design / Web Development / Branding / Digital Marketing</h2>
-            </div><!-- /end .main-content -->
-            <div class="scroll-line"></div>
-            <div class="scroll-text">
-                <p><span>Scroll</span></p>
-                <p><span>Down</span></p>
-            </div>
-        </div><!-- /end .container -->
+        </nav><!-- /end nav -->
+        <div class="wrapper">
+            <div class="main onepage-wrapper">
+                    <section class="page1 light pagination" id="home">
+                        <div class="container">
+							<div id="overlay"></div><!-- /end #overlay -->
+							<div id="branding">
+							   <img src="img/logo_white_v3.svg" alt="Logo" />
+								<p>Rock Ridge Creative</p>
+								<hr />
+							</div><!-- /end #branding -->
+							<div class="main-content">
+								<div id="branding-caption">
+									<h1></h1>
+									<h2>Web Design &nbsp;/&nbsp; Web Development &nbsp;/&nbsp; Branding &nbsp;/&nbsp; Digital Marketing</h2>
+								</div>
+								<div class="mouse"><div class="wheel"></div></div>
+							</div><!-- /end .main-content -->
+                        </div><!-- /end .container -->
+                    </section><!-- /end .page1 -->
+                    
+                    <section class="page2 dark-pagination" id="about">
+                        <div class="container">
+							<h1>Create Something Awesome</h1>
+                        </div>
+                    </section><!-- /end .page2 -->
+                    
+                    <section class="page3 light-pagination" id="services">
+                    </section><!-- /end .page3 -->
+                    
+                    <section class="page4 dark-pagination" id="portfolio">
+                    </section><!-- /end .page4 -->
+                    
+                    <section class="page5 light-pagination" id="contact">
+                    </section><!-- /end .page5 -->
+                </div><!-- /end .container -->
+            </div><!-- /end .main .onepage-wrapper -->
+        </div><!-- /end .wrapper -->
         <div id="left"></div>
         <div id="right"></div>
         <div id="top"></div>
         <div id="bottom"></div>
-        <div id="about">
-            
-        </div>
     </body>
 </html>
